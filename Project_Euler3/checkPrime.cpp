@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 int input, a,flag=0;
 int checkPrime(int input);
@@ -19,4 +19,4 @@ int checkPrime(int N) {
 		break;
 	}
 	return flag;
-}
+}*/
