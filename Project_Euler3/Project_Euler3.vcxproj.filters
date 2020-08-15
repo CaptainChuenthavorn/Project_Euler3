@@ -18,5 +18,8 @@
     <ClCompile Include="ProjectEuler3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="checkPrime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
