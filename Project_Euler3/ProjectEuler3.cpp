@@ -5,14 +5,17 @@ int checkPrime(int N,int i);
 int main()
 {
 	int  k, n,keep;
-	for (i = 2;i < 13195;i++) {
-		if (13195 % i == 0) {
-			for (a = 2;a <= i/2;a++) {
-				if (i % a == 0) {
+	for (i = 2;i < 600851475143;i++) {
+		if (600851475143 % i == 0) {
+			for (a = 2;a <= i/2 ;a++) {
+				if (i % a == 0 || i ==35) {
 					flag = 1;
 					break;
 				}
-				checkPrime(flag, i);	
+				//checkPrime(flag, i);	
+				if (flag == 0) {
+					prime = i;
+				}
 			}
 			/*for (k = 2;k < keep;k++) {
 				if (keep % k != 0 )
