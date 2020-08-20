@@ -17,7 +17,9 @@ int main()
 				prime = i;
 			}
 		}
-	}
-	printf("The largest Prime number factor is %d", prime);
+	} 
+	
+	if (input >= 0) printf("The largest Prime number factor is %d", prime);
+	else printf("your number is less than 0 \n Plese enter number >= 0");
 	return 0;
 }
