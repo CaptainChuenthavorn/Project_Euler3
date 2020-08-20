@@ -6,7 +6,7 @@ int main()
 	printf("Enter number to find the largest prime number factor : ");
 	scanf("%d", &input);
 	for (i = 2;i < input / 2;i++) {
-		if (input % i == 0) {
+		if (input % i == 0 && input >=0) {
 			for (a = 2;a <= i / 2;a++) {
 				if (i % a == 0) {
 					flag = 1;
