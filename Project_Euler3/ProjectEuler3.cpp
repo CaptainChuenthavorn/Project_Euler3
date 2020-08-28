@@ -2,24 +2,27 @@
 #include<stdio.h>
 int main()
 {
-	int i, a, flag = 0, prime = 0, input;
+	int num, maxPrime, Prime;
+	printf("(Please Enter number more than 1)\n");
 	printf("Enter number to find the largest prime number factor : ");
-	scanf("%d", &input);
-	for (i = 2;i < input / 2;i++) {
-		if (input % i == 0 && input >=0) {
-			for (a = 2;a <= i / 2;a++) {
-				if (i % a == 0) {
-					flag = 1;
-					break;
-				}
-			}
-			if (flag == 0) {
-				prime = i;
-			}
+	scanf("%d", &num);
+	Prime = 3;
+	maxPrime = 0;
+	while (num % 2 == 0)
+	{
+		maxPrime = 2;
+		num /= 2;
+	}
+	while (num != 1)
+	{
+		while (num % Prime == 0)
+		{
+			maxPrime = Prime;
+			num /= Prime;
 		}
-	} 
-	
-	if (input >= 0) printf("The largest Prime number factor is %d", prime);
-	else printf("your number is less than 0 \n Plese enter number >= 0");
+		Prime += 2;
+	}
+	if (num >0 ) printf("The largest Prime number factor is %d", maxPrime);
+	else if(num < 2)printf("Please enter number more than 1");
 	return 0;
 }
