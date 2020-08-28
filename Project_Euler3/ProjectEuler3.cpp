@@ -22,7 +22,7 @@ int main()
 		}
 		Prime += 2;
 	}
-	if (num >0 ) printf("The largest Prime number factor is %d", maxPrime);
-	else if(num < 2)printf("Please enter number more than 1");
+	printf("The largest Prime number factor is %d", maxPrime);
+	
 	return 0;
 }
